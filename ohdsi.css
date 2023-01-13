@@ -1,0 +1,38 @@
+/** 
+ * @author Marc A. Suchard
+ * @date June 8, 2022
+ */
+
+slides > slide {
+   background-image: url("image/footer.png"), url("image/logo.png");
+   background-size: 100%, 10%;
+   background-repeat: no-repeat, no-repeat;
+   background-position: 3% 98%, top left;
+ }
+ 
+ slides > slide:not(.nobackground):after {
+  content: '';
+}
+
+slides>slide.title-slide {
+    background-image: url("image/logo_title_page.png");
+    background-size: 25%;
+    background-position: top left;
+}
+ 
+.title-hex{
+  height: 100px;
+  align: middle;
+  float: left;
+}
+
+h2 { 
+ font-size:1.8em; 
+ color: #20425A;
+ text-indent: 50px;
+}
+
+body p {
+  margin-top: -20px;	
+  color: black;
+}
